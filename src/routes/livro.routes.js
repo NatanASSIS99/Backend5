@@ -5,7 +5,7 @@ const livroRoutes = Router();
 let livroController = new LivroController();
 
 livroRoutes.post(
-  '/livro',
+  '/livros',
   livroController.cadastrarLivro
 );
 
