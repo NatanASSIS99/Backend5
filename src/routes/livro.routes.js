@@ -15,17 +15,17 @@ livroRoutes.get(
 );
 
 livroRoutes.get(
-  '/livro/:id',
+  '/livros/:id',
   livroController.listarLivroPorId
 );
 
 livroRoutes.put(
-  '/livro/:id',
+  '/livros/:id',
   livroController.atualizarLivro
 );
 
 livroRoutes.delete(
-  '/livro/:id',
+  '/livros/:id',
   livroController.excluirLivro
 );
 

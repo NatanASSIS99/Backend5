@@ -3,8 +3,8 @@ const db = require('../database/db');
 class Livro {
     async criar(item) {
         try {
-            const query = 'INSERT INTO livros (titulo, isbn, autor, editora, ano) VALUES (?, ?, ?, ?, ?)';
-            const values = [item.titulo, item.isbn, item.autor, item.editora, item.ano];
+            const query = 'INSERT INTO livros (titulo, isbn, autor, editora, ano, link) VALUES (?, ?, ?, ?, ?, ?)';
+            const values = [item.titulo, item.isbn, item.autor, item.editora, item.ano, item.link];
             
             await db.query(query, values);
             
@@ -41,8 +41,8 @@ class Livro {
 
     async atualizar(item, id) {
         try {
-            const query = 'UPDATE livros SET titulo = ?, isbn = ?, autor = ?, editora = ?, ano = ? WHERE id = ?';
-            const values = [item.titulo, item.isbn, item.autor, item.editora, item.ano, id];
+            const query = 'UPDATE livros SET titulo = ?, isbn = ?, autor = ?, editora = ?, ano = ?, link = ? WHERE id = ?';
+            const values = [item.titulo, item.isbn, item.autor, item.editora, item.ano, item.link, id];
             
             await db.query(query, values);
             
