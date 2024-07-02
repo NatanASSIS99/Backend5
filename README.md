@@ -11,3 +11,7 @@ iniciar Back-end
 
   npm install
   npm start
+
+
+
+  obs: Banco de dados não enviado devido a falta de hospedagem.   
